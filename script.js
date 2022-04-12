@@ -2,42 +2,49 @@ let outBox;
 let programmingLanguages = [
   {
     "name" : "Zig",
+    "image": "images/Zig.png",
     "creators" : ["Andrew Kelley"],
     "firstAppearance" : "February 8, 2016",
     "color" : "#ff880050"
   },
   {
     "name" : "Rust",
+    "image": "images/Rust.png",
     "creators" : ["Graydon Hoare"],
     "firstAppearance" : "July 7, 2010",
     "color" : "#b9410e50"
   },
   {
     "name" : "Vala",
+    "image": "images/Vala.png",
     "creators" : ["Jürg Billeter", "Raffaele Sandrini"],
     "firstAppearance" : "2006",
     "color" : "#8800dd50"
   },
   {
     "name" : "JavaScript",
+    "image": "images/JavaScript.png",
     "creators": ["Brendan Eich"],
     "firstAppearance" : "December 5, 1995",
     "color" : "#ffdd0050"
   },
   {
     "name" : "Java",
+    "image": "images/Java.png",
     "creators": ["James Gosling"],
     "firstAppearance" : "1990",
     "color" : "#6666bb50"
   },
   {
     "name" : "C++",
+    "image": "images/C++.png",
     "creators" : ["Bjarne Stroustrup"],
     "firstAppearance" : "1985",
     "color" : "#0000ff50"
   },
   {
     "name" : "C",
+    "image": "images/C.png",
     "creators" : ["Dennis Ritchie"],
     "firstAppearance" : "1972",
     "color" : "#44448850"
@@ -62,7 +69,7 @@ function createContentElem(jsonData) {
   contentBox.appendChild(contentHeading);
 
   let contentImg = document.createElement("IMG");
-  contentImg.src = "images/" + jsonData["name"] + ".png";
+  contentImg.src = jsonData["image"];
   contentBox.appendChild(contentImg);
 
   let contentCreators = document.createElement("P");
