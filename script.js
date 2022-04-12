@@ -19,16 +19,16 @@ let programmingLanguages = [
     "color" : "#8800dd50"
   },
   {
-    "name" : "Java",
-    "creators": ["James Gosling"],
-    "firstAppearance" : "1990",
-    "color" : "#6666bb50"
-  },
-  {
     "name" : "JavaScript",
     "creators": ["Brendan Eich"],
     "firstAppearance" : "December 5, 1995",
     "color" : "#ffdd0050"
+  },
+  {
+    "name" : "Java",
+    "creators": ["James Gosling"],
+    "firstAppearance" : "1990",
+    "color" : "#6666bb50"
   },
   {
     "name" : "C++",
