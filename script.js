@@ -66,7 +66,7 @@ function createContentElem(jsonData) {
   contentBox.appendChild(contentImg);
 
   let contentCreators = document.createElement("P");
-  contentCreators.innerText = "Creator";
+  contentCreators.innerText = "Original Creator";
   if (jsonData["creators"].length > 1) {
     contentCreators.innerText += "s";
   }
